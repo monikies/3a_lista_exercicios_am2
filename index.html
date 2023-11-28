@@ -9,14 +9,143 @@
 </head>
 
 <body>
-  Hello world
   <script src="script.js"></script>
+  <h1>Lista 2 de Autoração Multimídia II</h1>
+  <h4> Monique Damasceno Gomes - 545344 <br>
+    Paulo Robério da Silva de Lima - 542602 </h4>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
+  <!-- QUESTAO 01 -->
+  <div class="perguntas">
+    <h3>1°) Crie uma função chamada sortArrayStr(arr,typeSort), que receba, como parâmetro, um vetor de palavras (arr) e
+      a forma de ordenação (typeSort). A forma de ordenação pode ser Crescente (typeSort=1) ou Decrescente
+      (typeSort=-1). O vetor deve ter no máximo 100 posições, caso contrário, a função retornará "null". Caso o valor de
+      typeSort seja diferente de um ou menos um, a função deve também retornar "null". Caso os parâmetros estejam
+      corretos, a função deve retornar a um vetor ordenado. (1 ponto)
+      <br>
+      <br>
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q01" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 02 -->
+  <div class="perguntas">
+    <h3>2°) Faça uma função chamada searchItems(arr,key,value), que recebe como parâmetros um Array de Objetos Literais
+      (arr), uma chave (key) e um valor para buscar (value). A função deve procurar em cada objeto armazenado no no
+      vetor, uma key (chave) que contenha um valor (value), fornecido. Nos Objetos Literais armazenados no vetor, deve
+      existir as chaves "nome", "idade" e "data-nascimento". A primeira chave deve receber valores do tipo String; a
+      idade, Number; e a última, Date. Caso a key fornecida como parâmetro não esteja presente nos objetos fornecidos, a
+      função deve retornar o tipo especial "undefined". Caso o valor fornecido no parâmetro value não esteja presente
+      nos objetos, deve ser retornando "null". Se houver objetos com o valor procurado, deve-se retornar um vetor que
+      contenha esses objetos. (1 ponto)
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q02" class=" botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 03 -->
+  <div class="perguntas">
+    <h3>3°) Faça uma função chamada filterPrimes(arr) que receba um vetor com elementos numéricos (a função deve testar
+      essa condição e retornar valor que possa indicar que o vetor fornecido não é composto somente por números) e que
+      retorna um vetor com o conjunto de valores primos encontrados. Caso não seja encontrado nenhum valor primo, a
+      função deve retornar um valor nulo. (1 ponto)
+      <p> Resposta:</p>
+      <a href="https://replit.com/@MoniqueGomes/Lista-2-Q03" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 04 -->
+  <div class="perguntas">
+    <h3>4°) Faça uma função chamada listImages(url) que recebe como parâmetro uma URL para uma função remota presente no
+      endereço https://jsonplaceholder.typicode.com/photos. Ao receber os objetos relacionados à chamada realizada, a
+      função criada deve retornar um vetor com os objetos recebidos. Caso não receba nenhum objeto, a função deve
+      retornar "null". (1 ponto)
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q04" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 05 -->
+  <div class="perguntas">
+    <h3>5°) Faça uma aplicação web que utilize a função listImages(url), criada anteriormente, e liste os objetos
+      recebidos na forma de cards (https://www.w3schools.com/howto/howto_css_cards.asp). Os cards devem ser dispostos em
+      duas colunas. Note que os objetos recebidos possuem os campos de endereço para imagens, título das imagens,
+      identificador (id) das imagens e identificador de álbum (albumId). Apresente as imagens (cujas urls são fornecidas
+      nos objetos) no formato de thumbnail. Ao se clicar no thumbnail, a imagem em seu tamanho normal deve ser
+      apresentada na forma de lightbox (https://www.w3schools.com/howto/howto_js_lightbox.asp). Utilize como base para
+      seu código o material disponível em https://www.w3schools.com/howto/default.asp. (1 ponto)
+
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q05" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 06 -->
+  <div class="perguntas">
+    <h3>6°) Faça uma função chamada listPots(url), que recebe como parâmetro um URL para uma função remota que retorna
+      todos os comentários de armazenados em um servidor. A função retorna um Array de objetos com os dados fornecidos
+      ou, caso não seja retornado nada, ela retorna o valor especial "null". Depois, faça uma aplicação web que acesse a
+      função remota presente no endereço https://jsonplaceholder.typicode.com/posts e liste e pagine os dados
+      recuperados. Use sua função para acessar os dados retornados pela função remota. Os dados retornados são
+      "comentários de usuários", logo, você deve criar uma interface que permite ao utilizador acessar esses dados de
+      forma compreensível e agradável. (1 ponto)
+    </h3>
+    <p>
+      Resposta: <br><br>
+    </p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q06" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 07 -->
+  <div class="perguntas">
+    <h3>7°) Crie um novo projeto, aproveitando a função listPots(url), descrita no exercício anterior, modifique-a e
+      crie uma função chamada listPotsByUset(url,userid) que retorne somente as mensagens pertencentes a um usuário
+      identificado pelo parâmetro userid. Modifique, também, a interface de exibição das mensagens paginadas a fim de
+      que o utilizador possa filtrar as mensagens exibidas, por usuário que a criou. Como os dados retornados não
+      possuem o nome dos usuários que criaram as mensagens, faça o filtro usar somente o valor do identificador de
+      usuário, que seria selecionado pelo utilizador a gim de fazer a filtragem. Lembre de usar o endereço
+      https://jsonplaceholder.typicode.com/posts para acessar as mensagens. (1 ponto)
+
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q07" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 08 -->
+  <div class="perguntas">
+    <h3>8°) Faça um novo projeto que utilize, novamente, a função listPots(url), descrita anteriormente, e a interface
+      de mensagens já criada por você nas questões anteriores. Crie uma função chamada showPosts(arrPosts), que recebe
+      um vetor de objetos com as informações de mensagens postadas por usuários (acessível pela URL
+      https://jsonplaceholder.typicode.com/posts) e cria de forma dinâmica (através de código Javascript) uma listagem
+      de mensagens onde as que tiverem identificador par serão respostas das mensagens de identificador ímpar,
+      imediatamente precedente. Assim, a mensagem cujo ID é 1 terá como resposta, a mensagem de identificador 2. A
+      mensagem de identificado 3, terá a 4 como resposta e assim por diante, até a última mensagem fornecida. (1 ponto)
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q08" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 09 -->
+  <div class="perguntas">
+    <h3>9°) Faça uma função que possa receber um número inteiro entre 0 e 1.000.000 e retorne como se fala em português
+      este número. (1 ponto)
+
+    </h3>
+    <p> Resposta:</p>
+    <a href="https://replit.com/@MoniqueGomes/Lista-2-Q09" class="botao">Código</a>
+  </div>
+
+  <!-- QUESTAO 10 -->
+  <div class="perguntas">
+    <h3>10°) Faça um programa que consiga percorrer o labirinto e encontrar a saída, sabendo que a grade onde ele foi
+      criado é de 11x11. IMPORTANTE: a posição onde fica a entrada seria representada, em termos de vetores, por
+      labirinto[0][1]="E"; e a saída é dada por labirinto[11][10]="S". O vetor tem índice iniciando em zero. E a
+      representação "[n][m]" serve para definir que esse vetor é bidimensional, ou seja, uma matriz nxm posições de
+      memória. (1 ponto)
+    </h3>
+    <p> Resposta:</p>
+    <a href="" class="botao">Código</a>
+  </div>
+
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
